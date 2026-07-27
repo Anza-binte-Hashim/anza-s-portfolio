@@ -34,12 +34,12 @@ export default function Hero() {
           {/* <a href="#projects" className="btn btn-primary" >
             View Projects
           </a> */}
-          <a href="/resume.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer" >
+          <a href={`${import.meta.env.BASE_URL}cv/cv.html`} className="btn btn-primary" target="_blank"  rel="noopener noreferrer">
             View CV
           </a>
-          <a href="/resume.pdf" download className="btn btn-outline" >
-           <FiDownload />
-    <span>Download CV</span>
+          <a href={`${import.meta.env.BASE_URL}cv/Anza Hashim _ Curriculum Vitae.pdf`} download className="btn btn-outline" >
+              <FiDownload />
+                <span>Download CV</span>
           </a>
         </div>
 

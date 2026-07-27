@@ -44,9 +44,9 @@ export default function Contact() {
                 💻 GitHub
             </a>
 
-            <a href="#">
+            {/* <a href="#">
                 💼 LinkedIn
-            </a>
+            </a> */}
 
           </div>
 

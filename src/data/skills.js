@@ -40,7 +40,7 @@ const skillGroups = [
       "Composer",
       "Node.js",
       "npm",
-      "Postman",
+      "Bruno",
       "VS Code",
     ],
   },

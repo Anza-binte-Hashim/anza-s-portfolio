@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+
+    --background: #f7f4ef;
+    --surface: #ffffff;
+
+    --text: #2f2a25;
+    --text-light: #6b645d;
+
+    --accent: #a67c52;
+
+    --border: #e7dfd6;
+
+    --max-width: 900px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    padding:4rem 1.5rem;
+}
+
+.cv{
+
+    max-width:var(--max-width);
+
+    margin:auto;
+
+    background:var(--surface);
+
+    padding:4rem;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.05);
+}
+
+.cv-header{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+}
+
+.cv-header h1{
+
+    font-size:2.75rem;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+}
+.cv-header::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:2px;
+
+    margin:1.5rem auto 0;
+
+    background:var(--accent);
+}
+.role{
+
+    margin-top:.4rem;
+
+    color:var(--accent);
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+}
+
+.contact{
+
+    margin-top:1.5rem;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:.75rem 1.5rem;
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+}
+.contact a{ color: var(--text-light);}
+.section{
+
+    margin-top:3rem;
+}
+
+.section h2{
+
+    font-size:.82rem;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:var(--accent);
+
+    margin-bottom:1rem;
+
+    padding-bottom:.5rem;
+
+    border-bottom:1px solid var(--border);
+}
+
+.section p{
+
+    color:var(--text-light);
+
+    font-size:.98rem;
+}
+
+@media (max-width:768px){
+
+    .cv{
+
+        padding:2rem;
+    }
+
+    .cv-header h1{
+
+        font-size:2.2rem;
+    }
+
+    .contact{
+
+        flex-direction:column;
+
+        gap:.5rem;
+    }
+    .skills-grid{
+
+    grid-template-columns:1fr;
+    }
+    .bottom-grid{
+
+    grid-template-columns:1fr;
+
+    gap:2rem;
+    }
+}
+
+@media print{
+
+    body{
+
+        background:#fff;
+
+        padding:0;
+    }
+
+    .cv{
+
+        box-shadow:none;
+
+        border-radius:0;
+
+        padding:0;
+    }
+}
+
+/* =======================
+   Projects
+======================= */
+
+.project{
+
+    margin-bottom:2.75rem;
+}
+
+.project:last-child{
+
+    margin-bottom:0;
+}
+
+.project-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:.4rem;
+}
+
+.project-header h3{
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    color:var(--text);
+}
+
+.status{
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    color:var(--accent);
+}
+
+.tech-stack{
+
+    color:var(--accent) !important;
+
+    font-weight:600;
+
+    margin-bottom:.8rem;
+}
+
+.project-description{
+
+    margin-bottom:1rem;
+}
+
+.project ul{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:.45rem 2rem;
+
+    list-style:none;
+}
+
+.project li{
+
+    position:relative;
+
+    padding-left:1.2rem;
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+}
+
+.project li::before{
+
+    content:"";
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+
+    position:absolute;
+
+    left:0;
+
+    top:.62rem;
+}
+
+/* ====================================
+   Technical Skills
+==================================== */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+}
+
+.skill-category{
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:1.4rem;
+}
+
+.skill-category h3{
+
+    color:var(--accent);
+
+    font-size:.95rem;
+
+    margin-bottom:1rem;
+
+    font-weight:700;
+}
+
+.skill-category ul{
+
+    list-style:none;
+
+    display:grid;
+
+    gap:.55rem;
+}
+
+.skill-category li{
+
+    position:relative;
+
+    padding-left:1.15rem;
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+}
+
+.skill-category li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:.62rem;
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:var(--accent);
+}
+
+/* ====================================
+   Bottom Grid
+==================================== */
+
+.bottom-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:3rem;
+
+    align-items:start;
+}
+
+/* ====================================
+   Education
+==================================== */
+
+.education-item{
+
+    margin-bottom:1.8rem;
+}
+
+.education-item:last-child{
+
+    margin-bottom:0;
+}
+
+.education-item h3{
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    margin-bottom:.35rem;
+}
+
+.education-item span{
+
+    display:inline-block;
+
+    color:var(--accent);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:.5rem;
+}
+
+.education-item p{
+
+    color:var(--text-light);
+
+    margin-bottom:.35rem;
+}
+
+.education-item small{
+
+    color:var(--text-light);
+
+    font-size:.85rem;
+
+    line-height:1.6;
+}
+
+/* ====================================
+   Languages
+==================================== */
+
+.language-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:.75rem;
+}
+
+.language-list span{
+
+    padding:.45rem 1rem;
+
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+    color:var(--text);
+
+    background:#faf8f5;
+
+    font-size:.9rem;
+
+    font-weight:500;
+}
+
+/* ====================================
+   Footer
+==================================== */
+
+.cv-footer{
+
+    margin-top:3rem;
+
+    padding-top:1.5rem;
+
+    border-top:1px solid var(--border);
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+    letter-spacing:.05em;
+}
