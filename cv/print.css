@@ -1,0 +1,155 @@
+/* ==========================================
+   PRINT STYLESHEET
+   A4 Optimisation
+========================================== */
+
+@page {
+
+    size: A4;
+
+    margin: 14mm;
+}
+
+/* ========================================== */
+
+*{
+
+    -webkit-print-color-adjust: exact !important;
+
+    print-color-adjust: exact !important;
+}
+
+/* ========================================== */
+
+html,
+body{
+
+    background:#ffffff;
+
+    color:#222;
+
+    margin:0;
+
+    padding:0;
+}
+
+/* ========================================== */
+
+.cv{
+
+    width:100%;
+
+    max-width:none;
+
+    margin:0;
+
+    padding:0;
+
+    border:none;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    background:#ffffff;
+}
+
+/* ========================================== */
+
+.cv-header{
+
+    margin-bottom:2rem;
+}
+
+.cv-header h1{
+
+    font-size:30pt;
+}
+
+.role{
+
+    font-size:12pt;
+}
+
+/* ========================================== */
+
+.section{
+
+    margin-top:1.6rem;
+
+    break-inside:avoid;
+}
+
+.project{
+
+    break-inside:avoid;
+
+    page-break-inside:avoid;
+}
+
+.skill-category{
+
+    break-inside:avoid;
+
+    page-break-inside:avoid;
+}
+
+.education-item{
+
+    break-inside:avoid;
+}
+
+/* ========================================== */
+
+.project{
+
+    margin-bottom:1.5rem;
+}
+
+.project ul{
+
+    gap:.35rem 1.5rem;
+}
+
+/* ========================================== */
+
+.skills-grid{
+
+    gap:1.25rem;
+}
+
+.skill-category{
+
+    padding:1rem;
+}
+
+/* ========================================== */
+
+.bottom-grid{
+
+    gap:2rem;
+}
+
+/* ========================================== */
+
+.cv-footer{
+
+    margin-top:1rem;
+}
+
+/* ========================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+}
+
+/* ========================================== */
+
+body::before,
+body::after{
+
+    display:none;
+}
