@@ -1,16 +1,48 @@
-# React + Vite
+# Hi, I'm Anza Hashim 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Junior Full-Stack Web Developer
 
-Currently, two official plugins are available:
+I build modern, responsive, and maintainable web applications with a strong focus on clean architecture, user experience, and scalable solutions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌱 Continuously learning modern web technologies and best practices
+- 💻 Building full-stack applications with React, Laravel, PHP, and PostgreSQL
+- 🎨 Passionate about creating elegant, accessible user interfaces
+- 📍 Pakistan
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+### Frontend
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+- SVG
+
+### Backend
+- Laravel
+- PHP
+- REST APIs
+- Authentication & Authorization
+
+### Database
+- PostgreSQL
+- MySQL
+- Database Design
+
+### Tools
+- Git
+- GitHub
+- Node.js
+- npm
+- Composer
+- VS Code
+- Bruno 
+
+---
